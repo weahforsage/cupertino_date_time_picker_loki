@@ -1,4 +1,4 @@
-import 'package:cupertino_date_time_picker/cupertino_date_time_picker.dart';
+import 'package:cupertino_date_time_picker/cupertino_date_time_picker_loki.dart';
 import 'package:flutter/material.dart';
 
 ///
@@ -27,8 +27,10 @@ class _TimePickerInPageState extends State<TimePickerInPage> {
 
   @override
   Widget build(BuildContext context) {
-    TextStyle hintTextStyle =
-        Theme.of(context).textTheme.subtitle1!.apply(color: const Color(0xFF999999));
+    TextStyle hintTextStyle = Theme.of(context)
+        .textTheme
+        .subtitle1!
+        .apply(color: const Color(0xFF999999));
     return Scaffold(
       appBar: AppBar(title: const Text("TimePicker In Page")),
       body: Container(

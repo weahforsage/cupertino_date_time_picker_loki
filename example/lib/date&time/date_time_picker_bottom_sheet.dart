@@ -1,4 +1,4 @@
-import 'package:cupertino_date_time_picker/cupertino_date_time_picker.dart';
+import 'package:cupertino_date_time_picker/cupertino_date_time_picker_loki.dart';
 import 'package:flutter/material.dart';
 
 class DateTimePickerBottomSheet extends StatefulWidget {
@@ -84,8 +84,10 @@ class _DateTimePickerBottomSheetState extends State<DateTimePickerBottomSheet> {
       ));
     }
 
-    TextStyle hintTextStyle =
-        Theme.of(context).textTheme.subtitle1!.apply(color: const Color(0xFF999999));
+    TextStyle hintTextStyle = Theme.of(context)
+        .textTheme
+        .subtitle1!
+        .apply(color: const Color(0xFF999999));
     return Scaffold(
       appBar: AppBar(title: const Text('DateTimePicker Bottom Sheet')),
       body: Container(
@@ -143,7 +145,8 @@ class _DateTimePickerBottomSheetState extends State<DateTimePickerBottomSheet> {
               margin: const EdgeInsets.only(top: 16.0),
               child: Row(
                 children: [
-                  const Text('show title actions', style: TextStyle(fontSize: 16.0)),
+                  const Text('show title actions',
+                      style: TextStyle(fontSize: 16.0)),
                   Checkbox(
                       value: _showTitle,
                       onChanged: (value) {

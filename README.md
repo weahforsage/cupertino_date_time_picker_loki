@@ -1,4 +1,4 @@
-# cupertino_date_time_picker
+# cupertino_date_time_picker_loki
 Flutter 的日期选择器控件，iOS 样式
 
 ![案例1][1]
@@ -13,7 +13,7 @@ https://pub.dev/packages/flutter_cupertino_datetime_picker
 
 ```yaml
 dependencies:
-  cupertino_date_time_picker: ^0.0.1
+  cupertino_date_time_picker_loki: ^0.0.3
 ```
 
 #### 2\. 获取包
