@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '/src/tool/gaps.dart';
 
+import '/src/tool/gaps.dart';
 import '../date_picker_constants.dart';
 import '../date_picker_theme.dart';
 import '../i18n/date_picker_i18n.dart';
@@ -26,6 +26,9 @@ class DatePickerTitleWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     if (pickerTheme.headerWidget != null) {
       return pickerTheme.headerWidget!;
+    }
+    if (pickerTheme.footerWidget != null) {
+      return pickerTheme.footerWidget!;
     }
     return Column(
       children: [

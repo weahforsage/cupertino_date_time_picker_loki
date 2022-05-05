@@ -1,11 +1,9 @@
 import 'dart:math';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '/src/tool/date_picker_tool.dart';
 import '/src/tool/date_time_extension.dart';
 import '/src/widget/picker_column_component_widget.dart';
-
 import '../date_picker_constants.dart';
 import '../date_picker_theme.dart';
 import '../date_time_formatter.dart';
@@ -171,6 +169,16 @@ class _DateTimePickerWidgetState extends State<DateTimePickerWidget> {
         onConfirm: () => _onPressedConfirm(),
       );
       return Column(children: [titleWidget, pickerWidget]);
+    }
+    //Display footer widget
+    if (widget.pickerTheme.footerWidget != null) {
+      Widget footerWidget = DatePickerTitleWidget(
+        pickerTheme: widget.pickerTheme,
+        locale: widget.locale,
+        onCancel: () => _onPressedCancel(),
+        onConfirm: () => _onPressedConfirm(),
+      );
+      return Column(children: [pickerWidget, footerWidget]);
     }
     return pickerWidget;
   }
