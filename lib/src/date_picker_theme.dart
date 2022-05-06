@@ -45,7 +45,9 @@ class DateTimePickerTheme with Diagnosticable {
   /// [headerWidget] Custom title widget. If specify a title widget, the cancel and confirm widgets will not display. Must set [titleHeight] value for custom title widget.
   /// [footerWidget] Custom title widget. If specify a footer widget.
   /// [showTitle] Whether display title widget or not. If set false, the default cancel and confirm widgets will not display, but the custom title widget will display if had specified one custom title widget.
-  /// [pickerHeight] The value of DatePicker's height.
+  /// [pickerHeight] The value of DatePicker's height
+  /// [magnification] The value of DatePicker's magnification
+  /// [squeeze] The value of DatePicker's squeeze
   /// [titleHeight] The value of DatePicker's title height.
   /// [itemHeight] The value of DatePicker's column height.
   /// [itemTextStyle] The value of DatePicker's column [TextStyle].
@@ -58,6 +60,8 @@ class DateTimePickerTheme with Diagnosticable {
     this.confirm,
     this.headerWidget,
     this.footerWidget,
+    this.magnification = dateTimePickerMagnification,
+    this.squeeze = dateTimePickerSqueeze,
     this.title = '',
     this.selectionOverlay,
     this.selectionOverlayColor = dateTimePickerSelectionOverlayColor,
@@ -117,4 +121,10 @@ class DateTimePickerTheme with Diagnosticable {
 
   /// The value of DatePicker's column [TextStyle].
   final TextStyle itemTextStyle;
+
+  /// The value of DatePicker's magnification.
+  final double magnification;
+
+  /// The value of DatePicker's squeeze.
+  final double squeeze;
 }

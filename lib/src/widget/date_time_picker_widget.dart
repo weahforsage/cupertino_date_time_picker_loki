@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+
 import '/src/tool/date_picker_tool.dart';
 import '/src/tool/date_time_extension.dart';
 import '/src/widget/picker_column_component_widget.dart';
@@ -251,6 +252,8 @@ class _DateTimePickerWidgetState extends State<DateTimePickerWidget> {
         valueRange: valueRange,
         format: format,
         minuteDivider: widget.minuteDivider,
+        squeeze: widget.pickerTheme.squeeze,
+        magnification: widget.pickerTheme.magnification,
         locale: widget.locale,
         pickerHeight: widget.pickerTheme.pickerHeight,
         itemHeight: widget.pickerTheme.itemHeight,
