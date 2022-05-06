@@ -22,6 +22,12 @@ const double dateTimePickerTitleHeight = 44.0;
 /// Default value of DatePicker's column height.
 const double dateTimePickerItemHeight = 36.0;
 
+/// Default value of DatePicker's squeeze.
+const double dateTimePickerSqueeze = 1.2;
+
+/// Default value of DatePicker's magnification.
+const double dateTimePickerMagnification = 1.2;
+
 /// Default value of DatePicker's item [TextStyle].
 const TextStyle dateTimePickerItemTextStyle =
     TextStyle(color: Color(0xFF000046), fontSize: 16.0);

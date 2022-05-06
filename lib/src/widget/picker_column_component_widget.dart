@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 
 import '/cupertino_date_time_picker_loki.dart';
 import '/src/date_picker_theme.dart';
@@ -19,6 +18,8 @@ class PickerColumnComponentWidget extends StatelessWidget {
     required this.format,
     required this.valueChanged,
     required this.minuteDivider,
+    this.magnification = dateTimePickerMagnification,
+    this.squeeze = dateTimePickerSqueeze,
     this.pickerHeight = dateTimePickerHeight,
     this.backgroundColor = dateTimePickerBackgroundColor,
     this.itemHeight = dateTimePickerItemHeight,
@@ -33,6 +34,8 @@ class PickerColumnComponentWidget extends StatelessWidget {
   final ValueChanged<int> valueChanged;
   final int minuteDivider;
   final double pickerHeight;
+  final double squeeze;
+  final double magnification;
   final Color backgroundColor;
   final double itemHeight;
   final TextStyle itemTextStyle;
@@ -48,6 +51,9 @@ class PickerColumnComponentWidget extends StatelessWidget {
       height: pickerHeight,
       decoration: BoxDecoration(color: backgroundColor),
       child: CupertinoPicker.builder(
+        useMagnifier: true,
+        squeeze: squeeze,
+        magnification: magnification,
         backgroundColor: backgroundColor,
         scrollController: scrollCtrl,
         // selectionOverlay: widget.pickerTheme.selectionOverlay ??

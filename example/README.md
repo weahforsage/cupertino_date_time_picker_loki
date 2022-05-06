@@ -1,6 +1,6 @@
 # cupertino_date_time_picker_example
 
-Demonstrates how to use the cupertino_date_time_picker plugin.
+Demonstrates how to use the cupertino_date_time_picker_loki plugin.
 
 ## Getting Started
 

@@ -1,4 +1,4 @@
-import 'package:cupertino_date_time_picker/cupertino_date_time_picker_loki.dart';
+import 'package:cupertino_date_time_picker_loki/cupertino_date_time_picker_loki.dart';
 import 'package:flutter/material.dart';
 
 ///
